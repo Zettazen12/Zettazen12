@@ -139,6 +139,7 @@ read -rp "$(echo -e " ${red}Pilih ${biru}1 ${NC}atau ${biru}0 ${NC}: ")" host
 case $host in
     1 | 01)
     pilihan="$domain1"
+    echo -e ""
     echo -e "anda memilih domain ${biru}$domain1${NC}"
     proses
     ;;
@@ -146,9 +147,11 @@ case $host in
     echo -e "${hijau}Kembali ke menu..."
     sleep 2
     menu
+    ;;
     *)
     echo -e ""
     echo -e "${red}anda salah pilih ${hijau}ketik dengan benar!${NC}"
     sleep 2
     pt
+    ;;
 esac
