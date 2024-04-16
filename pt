@@ -118,8 +118,9 @@ TEXT="
 "'&reply_markup={"inline_keyboard":[[{"text":"ORDER SCRIPT","url":"https://t.me/alawivpn"}]]}'
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 
-read -rp "$( echo -e "Tekan [ ${biru}enter$NC ] untuk kembali... ") "
+read -rp "$( echo -e "Tekan [ ${biru}enter$NC ] untuk kembali ke menu... ") "
 echo ""
+menu
 clear
 
 }
