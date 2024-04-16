@@ -8,6 +8,7 @@ NC='\e[0m'
 clear
 # list domain
 domain1="zettastore.my.id"
+domain2="zettastore.cloud"
 
 # function proses
 function proses() {
@@ -132,16 +133,23 @@ echo -e "${biru}│${NC}       ${hijau}POINTING DOMAIN ${biru}BY ${red}ALAWI VPN
 echo -e "${biru}└──────────────────────────────────────────${biru}┘${NC}"
 echo -e "${biru}┌──────────────────────────────────────────${biru}┐${NC}"
 echo -e "${biru}│${NC} [${biru}01${NC}] domain ${biru}xxx.zettastore.my.id         ${biru}│${NC}"
+echo -e "${biru}│${NC} [${biru}02${NC}] domain ${biru}xxx.zettastore.cloud         ${biru}│${NC}"
 echo -e "${biru}│${NC} [${biru}00${NC}] Kembali ke menu                     ${biru}│${NC}"
 echo -e "${biru}└──────────────────────────────────────────${biru}┘${NC}"
 echo -e ""
 
-read -rp "$(echo -e " ${red}Pilih ${biru}1 ${NC}atau ${biru}0 ${NC}: ")" host
+read -rp "$(echo -e " ${red}Pilih ${biru}1${NC}/${biru}2${NC}atau ${biru}0 ${NC}: ")" host
 case $host in
     1 | 01)
     pilihan="$domain1"
     echo -e ""
     echo -e "anda memilih domain ${biru}$domain1${NC}"
+    proses
+    ;;
+    2 | 02)
+    pilihan="$domain2"
+    echo -e ""
+    echo -e "anda memilih domain ${biru}$domain2${NC}"
     proses
     ;;
     0 | 00)
