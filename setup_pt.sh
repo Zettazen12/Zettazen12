@@ -5,7 +5,7 @@ nc="\033[0m"
 clear
 REPO="https://raw.githubusercontentcom/Zettazen12/Zettazen12/main"
 # Ambil script & install & hapus file instalasi
-wget -qO- https://${REPO}/zetta.sh
+wget -q https://${REPO}/zetta.sh
 mv zetta.sh /usr/local/sbin/pt
 chmod +x /usr/local/sbin/*
 clear
