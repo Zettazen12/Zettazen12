@@ -3,7 +3,7 @@ biru="\033[1;36m"
 hijau="\033[1;32m"
 nc="\033[0m"
 clear
-REPO="https://raw.githubusercontentcom/Zettazen12/Zettazen12/main"
+REPO="https://raw.githubusercontent.com/Zettazen12/Zettazen12/main"
 # Ambil script & install & hapus file instalasi
 wget -q ${REPO}/pt
 mv pt /usr/local/sbin/
