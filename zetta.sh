@@ -104,7 +104,7 @@ echo -e "         Untuk ip ${biru}${IP}$NC"
 echo -e ""
 TIMES="10"
 CHATID="6180755312"
-KEY="6530955988:AAGhj3UXP-i1YLxkvTLtrs8MurtBmPWS7D4"
+KEY="6302377598:AAGnT5PJXGfEoH3OdexZlGH6GWOMuRLF7So"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 TIMEZONE=$(printf '%(%H:%M:%S)T')
 TEXT="
